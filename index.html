@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Hasan Nishad</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Img/favicon.png">
+  <link rel="apple-touch-icon" href="Img/favicon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    html, body { font-family: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+      /* reveal animations */
+  .reveal { opacity: 0; transform: translateY(18px); transition: all .7s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  .reveal-fast { opacity: 0; transform: translateY(12px); transition: all .5s ease; }
+  .reveal-fast.in { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-fast { transition: none; opacity: 1; transform: none; }
+  }
+
+  </style>
+</head>
+
+<body class="bg-[#ffffff] text-zinc-900">
+  <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+
+    <!-- HERO -->
+    <section id="home" class="mt-2">
+  <div class="relative overflow-hidden rounded-[28px] bg-zinc-950 text-white ]">
+    <!-- background glow like screenshot -->
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(255,255,255,0.18),transparent_52%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_62%_38%,rgba(255,255,255,0.08),transparent_46%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_88%_10%,rgba(255,255,255,0.10),transparent_42%)]"></div>
+    </div>
+
+    <!-- NAV -->
+    <header class="relative px-6 sm:px-10 lg:px-14 pt-6 sm:pt-8">
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <a href="#" class="flex items-center gap-3">
+          <!-- Replace with your logo image if you have -->
+          <img src="Img/logo.png" alt="Logo" class="h-9 w-auto opacity-95" />
+        </a>
+
+        <!-- center nav (desktop) -->
+        <nav class="hidden md:flex items-center gap-12 text-[15px] text-white/70">
+          <a href="#home" class="hover:text-white transition">Home</a>
+          <a href="#about" class="hover:text-white transition">About Me</a>
+          <a href="#services" class="hover:text-white transition">Services</a>
+          <a href="#journey" class="hover:text-white transition">Experience</a>
+        </nav>
+
+        <!-- right CTA -->
+        <div class="flex items-center gap-3">
+          <a
+            href="#contact"
+            class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-white/90 transition shadow-sm"
+          >
+            Get in touch
+          </a>
+
+          <!-- Mobile menu button -->
+          <button
+            id="heroMenuBtn"
+            class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
+            aria-label="Open menu"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- mobile nav dropdown -->
+      <div id="heroMobileMenu" class="md:hidden hidden mt-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="flex flex-col gap-3 text-sm text-white/80">
+          <a href="#home" class="hover:text-white">Home</a>
+          <a href="#about" class="hover:text-white">About Me</a>
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#experience" class="hover:text-white">Experience</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <!-- HERO CONTENT -->
+<div class="relative px-6 sm:px-10 lg:px-14 pb-12 sm:pb-16 lg:pb-20 pt-6">
+  <div class="grid lg:grid-cols-12 gap-10 items-end min-h-[560px]">
+
+    <!-- LEFT TEXT (BOTTOM ALIGNED) -->
+    <div class="lg:col-span-7 flex flex-col justify-end">
+
+      <h1 class="reveal font-black tracking-tight leading-[1.02]
+                 text-[56px] sm:text-[76px] lg:text-[92px]">
+        Nur Hasan<br>Nishad
+      </h1>
+
+      <p class="reveal-fast mt-6 text-[36px] sm:text-[42px] font-light text-white/90">
+        Product Designer
+      </p>
+
+      <!-- FOLLOW -->
+      <div class="reveal-fast mt-10 flex items-center gap-5">
+
+        <span class="text-sm font-semibold tracking-wide text-white/85">
+          FOLLOW ME
+        </span>
+
+        <div class="flex items-center gap-3">
+          <div class="h-[2px] w-16 bg-white/70"></div>
+          <svg class="h-4 w-4 text-white/80" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 5l7 7-7 7-1.4-1.4L17.2 13H3v-2h14.2l-4.6-4.6L14 5z"/>
+          </svg>
+        </div>
+
+        <!-- icons -->
+        <div class="flex items-center gap-3">
+
+          <a href="https://www.facebook.com/nurhasannishad" class="h-9 w-9 rounded-xl bg-white/5 border border-white/10 grid place-items-center hover:bg-white/10 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M17.234 2.25001H6.744C6.14951 2.24947 5.56082 2.36673 5.01191 2.59501C4.46301 2.82329 3.96477 3.15807 3.54599 3.58001C3.12885 4.0006 2.79946 4.49991 2.57697 5.04892C2.35448 5.59792 2.24334 6.18568 2.24999 6.77801V17.222C2.24278 17.8144 2.35367 18.4023 2.57619 18.9514C2.79871 19.5005 3.12839 19.9998 3.54599 20.42C3.96466 20.8418 4.46273 21.1765 5.01145 21.4048C5.56017 21.6331 6.14868 21.7504 6.743 21.75H11.506V14.784H9.686C9.57333 14.7832 9.46548 14.7383 9.38562 14.6588C9.30577 14.5793 9.2603 14.4717 9.259 14.359V12.123C9.25886 12.0656 9.27011 12.0086 9.2921 11.9555C9.31409 11.9025 9.34638 11.8542 9.38711 11.8137C9.42783 11.7732 9.47619 11.7411 9.52938 11.7194C9.58256 11.6976 9.63953 11.6866 9.69699 11.687H11.506V9.50701C11.4553 8.99179 11.5182 8.47171 11.6903 7.98344C11.8623 7.49516 12.1394 7.05057 12.502 6.68101C12.8649 6.30978 13.3045 6.02217 13.7899 5.83823C14.2754 5.6543 14.7952 5.57846 15.313 5.61601H17.167C17.2237 5.6164 17.2798 5.62801 17.332 5.65017C17.3842 5.67233 17.4316 5.70461 17.4712 5.74513C17.5109 5.78566 17.5422 5.83364 17.5633 5.88631C17.5843 5.93898 17.5948 5.99529 17.594 6.05201V7.94201C17.594 7.99795 17.5829 8.05333 17.5614 8.10497C17.5399 8.15661 17.5084 8.20348 17.4687 8.24289C17.4291 8.2823 17.382 8.31347 17.3302 8.3346C17.2784 8.35573 17.2229 8.36641 17.167 8.36601H16.044C14.808 8.36601 14.572 8.94801 14.572 9.79701V11.676H17.268C17.3288 11.6757 17.3889 11.6883 17.4444 11.7131C17.4999 11.7378 17.5496 11.7741 17.5899 11.8195C17.6303 11.8649 17.6606 11.9184 17.6787 11.9765C17.6968 12.0345 17.7024 12.0957 17.695 12.156L17.425 14.393C17.414 14.4982 17.3642 14.5955 17.2852 14.6658C17.2062 14.7361 17.1037 14.7743 16.998 14.773H14.583V21.739H17.257C17.8513 21.7394 18.4398 21.6221 18.9885 21.3938C19.5373 21.1655 20.0353 20.8308 20.454 20.409C20.8713 19.9883 21.2007 19.4888 21.4232 18.9396C21.6457 18.3905 21.7568 17.8025 21.75 17.21V6.77801C21.7578 6.18362 21.6464 5.59369 21.4225 5.04304C21.1985 4.4924 20.8665 3.99222 20.446 3.57201C20.0249 3.14984 19.5241 2.81557 18.9727 2.58862C18.4213 2.36167 17.8303 2.24657 17.234 2.25001Z" fill="white"/>
+</svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/nurhasannishad/" class="h-9 w-9 rounded-xl bg-white/5 border border-white/10 grid place-items-center hover:bg-white/10 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="white"/>
+</svg>
+          </a>
+
+          <a href="https://www.behance.net/mdnurhasan" class="h-9 w-9 rounded-xl bg-white/5 border border-white/10 grid place-items-center hover:bg-white/10 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M7.354 11.107V9.50202C7.354 9.40702 7.354 9.36902 7.478 9.36902C8.541 9.36902 9.405 9.30602 9.834 9.55902C10.264 9.81102 10.282 10.159 10.289 10.263C10.296 10.367 10.293 10.516 10.093 10.879C9.893 11.242 8.998 11.249 8.352 11.249H7.497C7.392 11.249 7.354 11.211 7.354 11.107ZM10.3 12.789C10.399 12.9154 10.4697 13.0617 10.5073 13.2178C10.5448 13.374 10.5484 13.5364 10.5176 13.694C10.4869 13.8517 10.4226 14.0009 10.3292 14.1315C10.2357 14.2621 10.1153 14.3711 9.976 14.451C9.77142 14.5371 9.55195 14.5823 9.33 14.584H7.487C7.392 14.584 7.354 14.584 7.354 14.461V12.561C7.354 12.466 7.354 12.428 7.478 12.428H8.703C9.463 12.428 9.938 12.362 10.3 12.789Z" fill="white"/>
+  <path d="M16.989 11.909C16.938 11.7889 16.8607 11.6817 16.7627 11.5955C16.6648 11.5093 16.5487 11.4462 16.423 11.411C16.1718 11.3424 15.909 11.3278 15.6518 11.3684C15.3946 11.4089 15.1489 11.5035 14.931 11.646C14.7138 11.8654 14.5735 12.1492 14.531 12.455C14.531 12.562 14.531 12.582 14.658 12.582H17.028C17.145 12.582 17.145 12.582 17.135 12.435C17.1238 12.2512 17.0747 12.0719 16.989 11.909ZM16.989 11.909C16.938 11.7889 16.8597 11.6817 16.7617 11.5955C16.6638 11.5093 16.5487 11.4462 16.423 11.411C16.1718 11.3424 15.909 11.3278 15.6518 11.3684C15.3946 11.4089 15.1489 11.5035 14.931 11.646C14.7138 11.8654 14.5725 12.1492 14.53 12.455C14.53 12.562 14.53 12.582 14.657 12.582H17.028C17.145 12.582 17.145 12.582 17.135 12.435C17.1238 12.2512 17.0727 12.0719 16.987 11.909M18.1 2.5H6.4C5.36566 2.5 4.37368 2.91089 3.64228 3.64228C2.91089 4.37368 2.5 5.36566 2.5 6.4V18.1C2.5 19.1343 2.91089 20.1263 3.64228 20.8577C4.37368 21.5891 5.36566 22 6.4 22H18.1C19.1343 22 20.1263 21.5891 20.8577 20.8577C21.5891 20.1263 22 19.1343 22 18.1V6.4C22 5.36566 21.5891 4.37368 20.8577 3.64228C20.1263 2.91089 19.1343 2.5 18.1 2.5ZM14.278 8.71C14.278 8.633 14.278 8.603 14.366 8.603H17.525V9.423C17.525 9.423 17.528 9.481 17.476 9.481H14.415C14.278 9.481 14.278 9.481 14.278 9.345V8.71ZM11.353 15.877C10.153 16.53 8.136 16.267 5.747 16.267V8.184H9.559C10.534 8.184 11.694 8.428 12.006 9.461C12.168 9.91218 12.1582 10.4072 11.9783 10.8516C11.7984 11.296 11.4612 11.6585 11.031 11.87C11.4276 12.0167 11.7738 12.274 12.0287 12.6114C12.2836 12.9488 12.4365 13.3521 12.4693 13.7737C12.5021 14.1952 12.4135 14.6174 12.2139 14.9901C12.0143 15.3629 11.7121 15.6706 11.343 15.877H11.353ZM18.617 13.576H14.717C14.61 13.576 14.512 13.634 14.531 13.771C14.648 14.346 14.911 14.951 15.507 15.039C15.8217 15.1327 16.1587 15.1183 16.4643 14.9981C16.7698 14.8779 17.0264 14.6589 17.193 14.376C17.193 14.376 17.242 14.317 17.271 14.317H18.539C18.539 14.317 18.617 14.317 18.597 14.385C18.4633 14.7637 18.2654 15.1165 18.012 15.428C17.6731 15.7517 17.2642 15.993 16.8169 16.1331C16.3697 16.2731 15.8962 16.3083 15.4332 16.2357C14.9702 16.1632 14.5301 15.9849 14.1472 15.7148C13.7642 15.4446 13.4487 15.0898 13.225 14.678C13.0874 14.4034 13.0017 14.1057 12.972 13.8C12.7981 13.0316 12.931 12.2256 13.3425 11.5538C13.754 10.8819 14.4115 10.3973 15.175 10.203C17.388 9.725 18.792 11.246 18.792 13.391C18.7953 13.4161 18.7928 13.4416 18.7846 13.4655C18.7765 13.4894 18.7629 13.5112 18.7451 13.5291C18.7272 13.5469 18.7054 13.5605 18.6815 13.5686C18.6576 13.5768 18.6321 13.5793 18.607 13.576H18.617ZM16.433 11.411C16.1821 11.3414 15.919 11.3271 15.662 11.369C15.405 11.409 15.175 11.458 14.941 11.646C14.707 11.833 14.583 12.149 14.541 12.455C14.541 12.562 14.541 12.582 14.668 12.582H17.028C17.145 12.582 17.145 12.582 17.135 12.435C17.1238 12.2512 17.0747 12.0719 16.989 11.909C16.938 11.7889 16.8607 11.6817 16.7627 11.5955C16.6648 11.5093 16.5487 11.4462 16.423 11.411H16.433Z" fill="white"/>
+</svg>
+          </a>
+
+          <a href="https://dribbble.com/nurhassan902" class="h-9 w-9 rounded-xl bg-white/5 border border-white/10 grid place-items-center hover:bg-white/10 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C3.93913 1 2.92172 1.42143 2.17157 2.17157C1.42143 2.92172 1 3.93913 1 5V19C1 20.0609 1.42143 21.0783 2.17157 21.8284C2.92172 22.5786 3.93913 23 5 23H19C20.0609 23 21.0783 22.5786 21.8284 21.8284C22.5786 21.0783 23 20.0609 23 19V5C23 3.93913 22.5786 2.92172 21.8284 2.17157C21.0783 1.42143 20.0609 1 19 1H5ZM19.421 13.097C19.2622 14.1727 18.8714 15.201 18.2757 16.1106C17.6799 17.0203 16.8936 17.7895 15.971 18.365C15.556 16.389 15.025 14.538 14.344 12.772C15.741 12.59 17.384 12.694 19.421 13.097ZM7.271 17.821C9.261 15.104 11.01 13.551 13.345 12.961C14.07 14.811 14.625 16.756 15.05 18.854C14.0898 19.2806 13.0507 19.5007 12 19.5C10.2768 19.5023 8.60569 18.9088 7.27 17.82L7.271 17.821ZM19.501 12.094C17.335 11.674 15.534 11.571 13.958 11.818C13.748 11.3233 13.5253 10.8347 13.29 10.352C15.116 9.67 16.538 8.674 17.789 7.23C18.9186 8.59687 19.526 10.321 19.501 12.094ZM12.961 12.028C12.7634 11.5703 12.554 11.1179 12.333 10.671C10.28 11.277 7.755 11.565 4.506 11.715C4.46655 12.7079 4.6256 13.6987 4.97382 14.6294C5.32205 15.56 5.85246 16.4119 6.534 17.135C8.517 14.446 10.397 12.719 12.96 12.028H12.961ZM17.099 6.498C15.916 7.888 14.586 8.818 12.834 9.454C11.9661 7.82578 10.959 6.27567 9.824 4.821C10.5299 4.60755 11.2635 4.49938 12.001 4.5C13.969 4.5 15.761 5.257 17.099 6.498ZM11.866 9.765C10.9962 8.15519 9.98559 6.62555 8.846 5.194C7.748 5.70393 6.78956 6.47174 6.05234 7.43201C5.31511 8.39228 4.82097 9.51654 4.612 10.709C7.666 10.562 9.995 10.291 11.866 9.765Z" fill="white"/>
+</svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="lg:col-span-5 flex items-end justify-end">
+      <img
+        src="Img/hero_image.png"
+        class="reveal w-full max-w-[520px] h-[480px] sm:h-[540px] lg:h-[600px]
+               object-contain object-bottom "
+      />
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</section>
+
+    <!-- ABOUT -->
+<section id="about" class="mt-14 sm:mt-20">
+  <div class="grid gap-10 lg:grid-cols-12">
+    <!-- LEFT TITLE -->
+    <div class="lg:col-span-6">
+      <h2 class="reveal text-4xl sm:text-4xl font-extrabold tracking-wide text-zinc-950">
+        ABOUT ME
+      </h2>
+    </div>
+
+    <!-- RIGHT TEXT -->
+    <div class="lg:col-span-6">
+      <div class="reveal space-y-8 text-zinc-950">
+        <p class="text-base sm:text-lg leading-relaxed max-w-[760px]">
+          A passionate UI/UX Designer focused on creating clean, user-friendly, and impactful digital experiences.
+          Skilled in transforming complex ideas into simple, intuitive interfaces that enhance usability and drive business value.
+        </p>
+
+        <p class="text-base sm:text-lg leading-relaxed max-w-[760px]">
+          Experienced in designing modern websites, dashboards, and digital products with a strong attention to layout,
+          spacing, and user behavior. Always eager to learn, explore new trends, and continuously improve design solutions
+          that make technology easier for people.
+        </p>
+
+        <div>
+          <a
+            href="https://drive.google.com/file/d/1oLCLwNnMBIcxaht44wdlsv_-c58Fe7Ek/view?usp=sharing"
+            class="inline-flex items-center justify-center rounded-full bg-black px-8 py-3 text-sm sm:text-base font-semibold text-white
+                   hover:bg-zinc-900 transition shadow-sm"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE + STATS -->
+  <div class="mt-10 grid gap-10 lg:grid-cols-12 items-center">
+    <!-- BIG IMAGE -->
+  <div class="lg:col-span-6">
+    <div class="reveal overflow-hidden rounded-[22px] shadow-[0_18px_45px_rgba(0,0,0,0.12)]">
+      <img src="Img/about.png"
+           class="h-[320px] sm:h-[380px] lg:h-[420px] w-full object-cover "/>
+    </div>
+  </div>
+
+    <!-- STATS GRID -->
+    <div class="lg:col-span-6 space-y-10">
+
+      <!-- STATS -->
+      <div class="grid grid-cols-2 gap-10">
+
+        <div>
+          <div class="text-6xl font-extrabold">4+</div>
+          <div class="text-zinc-600 mt-2">Years of Experience</div>
+        </div>
+
+        <div class="text-right">
+          <div class="text-6xl font-extrabold">111+</div>
+          <div class="text-zinc-600 mt-2">Projects Completed</div>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-zinc-300"></div>
+
+
+      <!-- SKILLS + TOOLS -->
+      <div class="grid grid-cols-2 gap-12">
+
+        <!-- SKILLS -->
+        <div>
+          <h3 class="text-2xl font-bold mb-5">SKILLS</h3>
+
+          <ul class="space-y-3 text-zinc-700">
+            <li class="flex gap-3"><span>●</span> UI Design</li>
+            <li class="flex gap-3"><span>●</span> Wireframing & Prototyping</li>
+            <li class="flex gap-3"><span>●</span> Design Systems</li>
+            <li class="flex gap-3"><span>●</span> UX Research</li>
+          </ul>
+        </div>
+
+
+        <!-- TOOLS -->
+        <div>
+          <h3 class="text-2xl font-bold mb-5">TOOLS I USE</h3>
+
+          <ul class="space-y-3 text-zinc-700">
+            <li class="flex gap-3"><span>●</span> Figma</li>
+            <li class="flex gap-3"><span>●</span> Adobe XD</li>
+            <li class="flex gap-3"><span>●</span> Photoshop</li>
+            <li class="flex gap-3"><span>●</span> Adobe Illustrator</li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- SERVICES -->
+<section id="services" class="mt-16 bg-[#E7E9ED] py-16 rounded-[20px]">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+
+    <!-- HEADER -->
+    <div class="max-w-xl">
+      <h2 class="text-4xl font-extrabold">MY SERVICE</h2>
+      <p class="mt-4 text-lg text-zinc-600">
+        Help individuals and businesses create user-friendly products
+        that truly resonate with their audience.
+      </p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+      <!-- CARD -->
+      <div class="group p-10 rounded-[24px] bg-white transition duration-500
+                  hover:bg-black hover:-translate-y-2 cursor-pointer">
+
+        <!-- ICON -->
+        <div class="w-16 h-16 rounded-2xl bg-zinc-100 flex items-center justify-center
+                    group-hover:bg-white/10 transition">
+
+          <div class="w-16 h-16 rounded-2xl bg-zinc-100 flex items-center justify-center group-hover:bg-white/10 transition">
+  <img src="Img/icon/uiux-black.svg" class="w-9 h-9 group-hover:hidden" alt="UIUX">
+  <img src="Img/icon/uiux-white.svg" class="w-9 h-9 hidden group-hover:block" alt="UIUX">
+</div>
+
+        </div>
+
+        <!-- TITLE -->
+        <h3 class="mt-6 text-xl font-semibold text-zinc-900
+                   group-hover:text-white transition">
+          UIUX DESIGN
+        </h3>
+
+        <!-- DESC -->
+        <p class="mt-3 text-zinc-600 group-hover:text-white/70 transition">
+          Designing intuitive, user-centered digital experiences that balance usability, aesthetics, and business goals.
+        </p>
+      </div>
+
+
+      <!-- CARD -->
+      <div class="group p-10 rounded-[24px] bg-white transition duration-500
+                  hover:bg-black hover:-translate-y-2 cursor-pointer">
+
+        <div class="w-16 h-16 rounded-2xl bg-zinc-100 flex items-center justify-center group-hover:bg-white/10 transition">
+  <img src="Img/icon/graphic-black.svg" class="w-9 h-9 group-hover:hidden" alt="Graphic">
+  <img src="Img/icon/graphic-white.svg" class="w-9 h-9 hidden group-hover:block" alt="Graphic">
+</div>
+
+        <h3 class="mt-6 text-xl font-semibold text-zinc-900 group-hover:text-white transition">
+          GRAPHIC DESIGN
+        </h3>
+
+        <p class="mt-3 text-zinc-600 group-hover:text-white/70 transition">
+          Creating visually compelling designs that communicate ideas clearly and strengthen brand identity.
+        </p>
+      </div>
+
+
+      <!-- CARD -->
+      <div class="group p-10 rounded-[24px] bg-white transition duration-500
+                  hover:bg-black hover:-translate-y-2 cursor-pointer">
+
+        <div class="w-16 h-16 rounded-2xl bg-zinc-100 flex items-center justify-center group-hover:bg-white/10 transition">
+  <img src="Img/icon/ux-black.svg" class="w-9 h-9 group-hover:hidden" alt="UX">
+  <img src="Img/icon/ux-white.svg" class="w-9 h-9 hidden group-hover:block" alt="UX">
+</div>
+
+        <h3 class="mt-6 text-xl font-semibold text-zinc-900 group-hover:text-white transition">
+          UX RESEARCH
+        </h3>
+
+        <p class="mt-3 text-zinc-600 group-hover:text-white/70 transition">
+          Understanding user behavior through research and insights to build smarter, data-driven design solutions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- SELECTED WORK -->
+    <!-- ===== SELECTED WORK ===== -->
+<section id="experience" class="mt-16 sm:mt-20">
+  <!-- Header (right aligned like screenshot) -->
+  <div class="reveal text-right">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-zinc-950">SELECTED WORK</h2>
+    <p class="mt-2 text-sm sm:text-base text-zinc-500 max-w-[520px] ml-auto">
+      A collection of projects that showcase my design process,
+      creativity, and problem-solving approach
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="mt-10 grid gap-8 md:grid-cols-2">
+    <!-- Card 1 -->
+    <a href="https://www.behance.net/gallery/212048767/JRF-Wallet-Mobile-App-Redesign-UIUX-Case-Study" class="reveal group relative overflow-hidden rounded-[22px] bg-zinc-950">
+      <img
+        src="Img/work-1.png"
+        alt="Work 1"
+        class="h-[320px] sm:h-[420px] lg:h-[460px] w-full object-cover transition duration-700 group-hover:scale-[1.06]"
+      />
+      <!-- gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/0"></div>
+
+      <!-- content -->
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-7 transition duration-500 group-hover:translate-y-[-4px]">
+        <h3 class="text-white text-xl sm:text-2xl font-semibold">JRF Wallet Mobile App Redesign</h3>
+        <p class="mt-2 text-white/80 text-sm sm:text-base leading-snug max-w-[520px]">
+          Redesigning a fintech mobile experience to improve usability, transaction clarity, and user trust.
+        </p>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="https://www.behance.net/gallery/215823241/Minecraft-Skins-Mods-Gaming-Apps" class="reveal group relative overflow-hidden rounded-[22px] bg-zinc-950">
+      <img
+        src="Img/work-2.png"
+        alt="Work 2"
+        class="h-[320px] sm:h-[420px] lg:h-[460px] w-full object-cover transition duration-700 group-hover:scale-[1.06]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/0"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-7 transition duration-500 group-hover:translate-y-[-4px]">
+        <h3 class="text-white text-xl sm:text-2xl font-semibold">Minecraft: Skins & Mods | Gaming Apps</h3>
+        <p class="mt-2 text-white/80 text-sm sm:text-base leading-snug max-w-[520px]">
+          Designing an engaging gaming interface focused on customization, discovery, and seamless user interaction.
+        </p>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="https://www.behance.net/gallery/159144087/Vonome-Software-System-Landing-Page" class="reveal group relative overflow-hidden rounded-[22px] bg-zinc-950">
+      <img
+        src="Img/work-3.png"
+        alt="Work 3"
+        class="h-[320px] sm:h-[420px] lg:h-[460px] w-full object-cover transition duration-700 group-hover:scale-[1.06]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/0"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-7 transition duration-500 group-hover:translate-y-[-4px]">
+        <h3 class="text-white text-xl sm:text-2xl font-semibold">Vonome Software & System SaaS Landing Page</h3>
+        <p class="mt-2 text-white/80 text-sm sm:text-base leading-snug max-w-[520px]">
+          Creating a conversion-focused SaaS landing experience with clear messaging, hierarchy, and modern UI patterns.
+        </p>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="https://www.behance.net/gallery/141753803/Home-Service-Related-User-Case-Study" class="reveal group relative overflow-hidden rounded-[22px] bg-zinc-950">
+      <img
+        src="Img/work-4.png"
+        alt="Work 4"
+        class="h-[320px] sm:h-[420px] lg:h-[460px] w-full object-cover transition duration-700 group-hover:scale-[1.06]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/0"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-7 transition duration-500 group-hover:translate-y-[-4px]">
+        <h3 class="text-white text-xl sm:text-2xl font-semibold">Home Service Related User Case Study</h3>
+        <p class="mt-2 text-white/80 text-sm sm:text-base leading-snug max-w-[520px]">
+          A research-driven UX case study to simplify service booking and improve end-to-end user experience.
+        </p>
+      </div>
+    </a>
+  </div>
+  <!-- VIEW ALL BUTTON -->
+<div class="mt-10 flex justify-center">
+  <a href="https://behance.net/mdnurhasan"
+     class="group inline-flex items-center gap-3 rounded-full bg-black px-8 py-3.5
+            text-sm sm:text-base font-semibold text-white transition
+            hover:bg-zinc-900 hover:scale-[1.02] active:scale-[0.99]
+            shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
+    View All
+
+    <span class="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition group-hover:bg-white/15">
+      <svg class="h-4 w-4 text-white transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M14 5l7 7-7 7-1.4-1.4L17.2 13H3v-2h14.2l-4.6-4.6L14 5z"/>
+      </svg>
+    </span>
+  </a>
+</div>
+</section>
+
+<!-- ===== MY DESIGN JOURNEY + MY WORK EXPERIENCE ===== -->
+<section id="journey" class="mt-16 sm:mt-20">
+  <div class="relative">
+    <!-- decorative dashed path -->
+    <!-- dashed path overlay (fixed position) -->
+
+    <!-- TOP ROW -->
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-8 relative min-h-[560px]">
+
+        <h2 class="reveal text-3xl sm:text-4xl font-extrabold tracking-wide">
+          MY DESIGN JOURNEY
+        </h2>
+
+        <!-- steps -->
+        <div class="mt-8 space-y-8">
+          <!-- item 1 -->
+          <div class="reveal flex gap-6 items-start">
+            <!-- star -->
+            <svg class="shrink-0 mt-1" width="44" height="44" viewBox="0 0 56 56" fill="none">
+              <path d="M28 2L35.5 20.5L54 28L35.5 35.5L28 54L20.5 35.5L2 28L20.5 20.5L28 2Z" fill="#0B0B0B"/>
+            </svg>
+
+            <p class="max-w-[640px] text-zinc-700 leading-relaxed text-sm sm:text-base">
+              I didn’t start as a designer — I started as someone who was curious. I often asked questions like, “Why is this interface confusing?” or “How can this experience be made simpler?
+            </p>
+          </div>
+
+          <!-- item 2 (slightly indented like screenshot) -->
+          <div class="reveal flex gap-6 items-start lg:pl-20">
+            <svg class="shrink-0 mt-1" width="44" height="44" viewBox="0 0 56 56" fill="none">
+              <path d="M28 2L35.5 20.5L54 28L35.5 35.5L28 54L20.5 35.5L2 28L20.5 20.5L28 2Z" fill="#0B0B0B"/>
+            </svg>
+
+            <p class="max-w-[640px] text-zinc-700 leading-relaxed text-sm sm:text-base">
+              That curiosity slowly turned into passion. I began exploring colors, layouts, and user flows, but soon realized that design is not just about visuals — it’s about solving problems, improving usability, and creating meaningful experiences for people.
+            </p>
+          </div>
+
+          <!-- item 3 -->
+          <div class="reveal flex gap-6 items-start lg:pl-40">
+            <svg class="shrink-0 mt-1" width="44" height="44" viewBox="0 0 56 56" fill="none">
+              <path d="M28 2L35.5 20.5L54 28L35.5 35.5L28 54L20.5 35.5L2 28L20.5 20.5L28 2Z" fill="#0B0B0B"/>
+            </svg>
+
+            <p class="max-w-[640px] text-zinc-700 leading-relaxed text-sm sm:text-base">
+              Over time, I’ve worked on websites, dashboards, and digital products. Each project taught me something new — from understanding user behavior to refining details through feedback and continuous iteration.
+            </p>
+          </div>
+
+          <!-- item 4 -->
+          <div class="reveal flex gap-6 items-start lg:pl-56">
+            <svg class="shrink-0 mt-1" width="44" height="44" viewBox="0 0 56 56" fill="none">
+              <path d="M28 2L35.5 20.5L54 28L35.5 35.5L28 54L20.5 35.5L2 28L20.5 20.5L28 2Z" fill="#0B0B0B"/>
+            </svg>
+
+            <p class="max-w-[640px] text-zinc-700 leading-relaxed text-sm sm:text-base">
+              Today, I design with a clear purpose — to create simple, intuitive, and human-centered digital experiences that connect user needs with business goals.
+            </p>
+          </div>
+
+          <!-- button (position like screenshot) -->
+          <div class="reveal lg:pl-[420px] pt-2">
+            <a href="https://drive.google.com/file/d/1oLCLwNnMBIcxaht44wdlsv_-c58Fe7Ek/view?usp=sharing"
+               class="inline-flex items-center justify-center rounded-full bg-black px-9 py-3
+                      text-sm sm:text-base font-semibold text-white hover:bg-zinc-900 transition">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE (top) -->
+      <div class="lg:col-span-4 flex lg:justify-end">
+        <div class="reveal overflow-hidden rounded-[22px] bg-zinc-950 shadow-[0_18px_60px_rgba(0,0,0,0.18)]
+                    w-full max-w-[260px] sm:max-w-[300px]">
+          <img src="Img/journey-top.png" alt="Journey"
+               class="h-[350px] sm:h-[400px] w-full object-cover "/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MY WORK EXPERIENCE ===== -->
+  <div id="work-experience" class="mt-14 sm:mt-20">
+    <div class="reveal text-right">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">MY WORK EXPERIENCE</h2>
+      <p class="mt-2 text-sm sm:text-base text-zinc-500 max-w-[520px] ml-auto">
+        A collection of projects that showcase my design process,
+        creativity, and problem-solving approach
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-8 lg:grid-cols-2">
+      <!-- Card 1 -->
+      <div class="reveal rounded-[22px] bg-[#F4F4F4] p-7 sm:p-8">
+        <div class="text-lg sm:text-xl font-bold text-zinc-950">
+          JRF Intelligence, Dhaka Bangladesh
+        </div>
+        <div class="mt-1 text-sm text-zinc-500">March 2022 - Present</div>
+
+        <div class="mt-5 font-semibold text-zinc-950">UIUX Designer</div>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-zinc-600">
+          I specialize in solving design-related challenges across the organization's
+          digital platforms. My role involves enhancing the user experience of
+          websites and apps by addressing user feedback and optimizing interfaces for
+          usability and accessibility.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal rounded-[22px] bg-[#F4F4F4] p-7 sm:p-8">
+        <div class="text-lg sm:text-xl font-bold text-zinc-950">
+          Creative IT Institute, Dhaka Bangladesh
+        </div>
+        <div class="mt-1 text-sm text-zinc-500">December 2021 - March 2022</div>
+
+        <div class="mt-5 font-semibold text-zinc-950">UI Designer Internship</div>
+        <p class="mt-3 text-sm sm:text-base leading-relaxed text-zinc-600">
+          Contributing to intuitive UI design through practical learning and real
+          project experience. Gaining hands-on experience designing modern,
+          user-friendly interfaces for real-world digital products.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CLIENT + FOOTER (same section like screenshot) -->
+  <section class="mt-20">
+    <div class="bg-black text-white rounded-[30px] px-8 lg:px-16 py-16">
+
+    <!-- ===== MY CLIENT ===== -->
+<h2 class="text-3xl font-bold">MY CLIENT</h2>
+<p class="text-white/70 mt-3 max-w-lg">
+  Trusted by businesses to deliver user-focused design solutions.
+  Proud to collaborate with brands that value great design.
+</p>
+
+<!-- Slider -->
+<div class="relative mt-12 overflow-hidden">
+  <!-- TRACK -->
+  <div id="sliderTrack" class="flex transition-transform duration-700 ease-out">
+
+    <!-- ===== SLIDE 1 (Card 1-2) ===== -->
+    <div class="min-w-full px-1">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- CARD 1 -->
+        <div class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        Nishad has an exceptional eye for usability. He redesigned our dashboard with clarity and structure, which significantly improved user engagement.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">Michael Carter</div>
+        <div class="text-white/55 text-sm">Product Manager, NovaFin Technologies</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-1.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+        <!-- CARD 2 -->
+        <div
+  class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        Working with Nishad was seamless. He transformed our outdated interface into a modern, conversion-focused experience.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">Alice</div>
+        <div class="text-white/55 text-sm">Marketing Director, BrightPath Digital</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-2.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 2 (Card 3-4) ===== -->
+    <div class="min-w-full px-1">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- CARD 3 -->
+                <div
+  class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        Nishad understands complex systems very well. His UX improvements made our ERP platform much more intuitive and efficient.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">Daniel Foster</div>
+        <div class="text-white/55 text-sm">CTO, NextWave Ventures</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-3.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+        <!-- CARD 4 -->
+                <div
+  class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        Nur combines creativity with strategic thinking. His design work helped us present our product professionally to users and investors.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">James Walker</div>
+        <div class="text-white/55 text-sm">Advisor, NextWave Ventures</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-4.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- ===== SLIDE 3 (Card 5-6) ===== -->
+    <div class="min-w-full px-1">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- CARD 5 -->
+                <div
+  class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        He quickly understood our workflow and delivered a clean, user-friendly design. Communication and attention to detail were excellent.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">Olivia Bennett</div>
+        <div class="text-white/55 text-sm">Founder, Elevate Service Group</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-5.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+        <!-- CARD 6 -->
+                <div
+  class="group relative overflow-hidden rounded-[22px] bg-[#0B0B0B]
+         shadow-[0_18px_60px_rgba(0,0,0,0.55)] transition
+         hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(0,0,0,0.65)]"
+>
+  <!-- subtle gradient (left → right) -->
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent"></div>
+
+  <div class="relative grid grid-cols-12 min-h-[260px]">
+    <!-- Left Content -->
+    <div class="col-span-7 p-7 sm:p-8 flex flex-col">
+      <!-- Quote -->
+      <div class="-mt-1">
+  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+    <path d="M20.5333 44H6L15.4667 12H27.7333L20.5333 44ZM49.6 44H35.0667L44.5333 12H56.8L49.6 44Z"
+          fill="white"/>
+  </svg>
+</div>
+
+
+      <!-- Text -->
+      <p class="mt-3 text-white/75 leading-relaxed text-sm sm:text-base max-w-[360px]">
+        He has a great eye for spacing, hierarchy, and user flow. Our product feels premium after his design improvements.
+      </p>
+
+      <!-- Name + role -->
+      <div class="mt-auto pt-6">
+        <div class="text-white font-semibold text-lg">Rifat Chowdhury</div>
+        <div class="text-white/55 text-sm">Founder, Innovex Systems</div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-span-5 relative">
+      <img
+        src="Img/client-6.png"
+        alt="Client"
+        class="absolute inset-0 h-full w-full object-cover object-top 
+               transition duration-700 group-hover:scale-[1.03]"
+      />
+      <!-- soft fade on left edge of image -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-black/0 to-black/35"></div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="flex justify-center gap-3 mt-8">
+    <button class="cDot w-3 h-3 rounded-full bg-white" aria-label="Slide 1"></button>
+    <button class="cDot w-3 h-3 rounded-full bg-white/30" aria-label="Slide 2"></button>
+    <button class="cDot w-3 h-3 rounded-full bg-white/30" aria-label="Slide 3"></button>
+  </div>
+</div>
+
+    <!-- ===== CTA ===== -->
+    <div id="contact" class="text-center mt-24">
+      <h2 class="text-4xl lg:text-6xl font-bold leading-tight">
+        Thanks for visiting — let’s connect <br>
+        and create something great together.
+      </h2>
+      <p class="text-white/60 mt-6">Feel free to reach out anytime.</p>
+
+      <!-- Social Icons -->
+<div class="flex justify-center gap-6 mt-8">
+
+  <!-- EMAIL -->
+  <a href="mailto:nurhassan902@gmail.com"
+     class="group w-14 h-14 flex items-center justify-center rounded-full
+            bg-white/10 hover:bg-[#FC3D3D] transition duration-300">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47 47" fill="none">
+  <path d="M39.1667 7.8335H7.83335C5.67919 7.8335 3.93627 9.596 3.93627 11.7502L3.91669 35.2502C3.91669 37.4043 5.67919 39.1668 7.83335 39.1668H39.1667C41.3209 39.1668 43.0834 37.4043 43.0834 35.2502V11.7502C43.0834 9.596 41.3209 7.8335 39.1667 7.8335ZM39.1667 15.6668L23.5 25.4585L7.83335 15.6668V11.7502L23.5 21.5418L39.1667 11.7502V15.6668Z" fill="white"/>
+</svg>
+  </a>
+
+  <!-- WHATSAPP -->
+  <!-- WHATSAPP ICON -->
+<a href="https://wa.me/8801797802655" target="_blank"
+   class="group w-14 h-14 flex items-center justify-center rounded-full
+          bg-white/10 hover:bg-[#25D366] transition duration-300">
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47 47" fill="none">
+  <path d="M23.5019 3.9165C34.3178 3.9165 43.0853 12.684 43.0853 23.4998C43.0853 34.3157 34.3178 43.0832 23.5019 43.0832C20.0411 43.0891 16.6411 42.1732 13.6515 40.4296L3.92644 43.0832L6.57411 33.3542C4.82915 30.3637 3.91254 26.9622 3.91861 23.4998C3.91861 12.684 12.6861 3.9165 23.5019 3.9165ZM16.8279 14.2957L16.4363 14.3113C16.183 14.3288 15.9356 14.3953 15.7078 14.5072C15.4954 14.6276 15.3015 14.778 15.132 14.9537C14.897 15.175 14.7639 15.3669 14.6209 15.5529C13.8966 16.4947 13.5066 17.6509 13.5125 18.839C13.5164 19.7986 13.7671 20.7327 14.1587 21.6061C14.9597 23.3725 16.2776 25.2428 18.0167 26.9759C18.4357 27.393 18.847 27.8121 19.2896 28.2018C21.4505 30.1041 24.0254 31.4761 26.8096 32.2085L27.9219 32.3789C28.2842 32.3985 28.6465 32.3711 29.0107 32.3535C29.581 32.3234 30.1377 32.169 30.642 31.9011C30.8983 31.7686 31.1485 31.6248 31.3921 31.4703C31.3921 31.4703 31.475 31.4141 31.6369 31.294C31.9012 31.0982 32.0638 30.9591 32.2831 30.73C32.4476 30.5603 32.5847 30.3631 32.6944 30.1386C32.8471 29.8194 32.9999 29.2103 33.0625 28.7031C33.1095 28.3154 33.0958 28.1039 33.0899 27.9727C33.0821 27.7631 32.9078 27.5458 32.7179 27.4537L31.5781 26.9426C31.5781 26.9426 29.8744 26.2004 28.8325 25.7265C28.7235 25.679 28.6067 25.6518 28.4879 25.6462C28.3539 25.6322 28.2184 25.6471 28.0907 25.69C27.963 25.7329 27.846 25.8028 27.7476 25.8949C27.7378 25.891 27.6066 26.0026 26.1907 27.7181C26.1095 27.8273 25.9975 27.9098 25.8692 27.9552C25.7408 28.0005 25.6019 28.0066 25.4701 27.9727C25.3424 27.9387 25.2174 27.8955 25.096 27.8434C24.8532 27.7416 24.769 27.7024 24.6025 27.6319C23.4782 27.1422 22.4375 26.4794 21.5182 25.6677C21.2714 25.4523 21.0423 25.2173 20.8073 24.9901C20.0369 24.2522 19.3655 23.4176 18.8098 22.507L18.6942 22.3209C18.6125 22.1952 18.5455 22.0605 18.4945 21.9195C18.4201 21.6316 18.6139 21.4005 18.6139 21.4005C18.6139 21.4005 19.0898 20.8796 19.3111 20.5976C19.5265 20.3234 19.7087 20.0571 19.8261 19.8671C20.0572 19.495 20.1297 19.1132 20.0083 18.8175C19.4599 17.478 18.8933 16.1456 18.3084 14.8205C18.1929 14.5581 17.8502 14.3701 17.5388 14.3329C17.4331 14.3198 17.3273 14.3094 17.2216 14.3015C16.9586 14.2865 16.695 14.2891 16.4324 14.3094L16.8279 14.2957Z" fill="white"/>
+</svg>
+
+</a>
+
+
+  <!-- TELEGRAM -->
+  <a href="https://t.me/nurhasan902" target="_blank"
+     class="group w-14 h-14 flex items-center justify-center rounded-full
+            bg-white/10 hover:bg-[#0088CC] transition duration-300">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47 47" fill="none">
+  <path d="M42.958 10.1246L37.0243 37.9036C36.5817 39.86 35.4459 40.3006 33.8048 39.4174L24.9041 32.853L20.5469 37.0184C20.1062 37.461 19.6636 37.9036 18.6531 37.9036L19.3484 28.7484L35.9511 13.6614C36.6444 12.9662 35.7611 12.7136 34.8779 13.2834L14.2351 26.2868L5.33256 23.5725C3.37619 22.9419 3.37619 21.6142 5.77515 20.7329L40.3691 7.28505C42.0729 6.7798 43.5259 7.66497 42.958 10.1246Z" fill="white"/>
+</svg>
+  </a>
+
+</div>
+
+    </div>
+
+    <!-- BIG NAME -->
+    <h1 class="text-[80px] lg:text-[200px] font-extrabold text-white/10 mt-16 text-center leading-none">
+      NUR HASAN
+    </h1>
+
+    <!-- FOOTER -->
+    <div class="flex flex-col lg:flex-row justify-between items-center mt-10 text-white/60 text-sm">
+      <p>© 2026 Nur Hasan Nishad</p>
+
+      <div class="flex gap-6 mt-4 lg:mt-0">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Services</a>
+        <a href="#">Experience</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </div>
+
+  <script>
+  // mobile nav toggle
+  const heroBtn = document.getElementById("heroMenuBtn");
+  const heroMenu = document.getElementById("heroMobileMenu");
+  if (heroBtn && heroMenu) {
+    heroBtn.addEventListener("click", () => heroMenu.classList.toggle("hidden"));
+  }
+
+  // reveal on load + scroll (one-time)
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal, .reveal-fast').forEach(el => io.observe(el));
+</script>
+
+<script>
+  // client slider
+  const track = document.getElementById("sliderTrack");
+  const dots = Array.from(document.querySelectorAll(".cDot"));
+  let idx = 0;
+
+  function go(n){
+    idx = n;
+    track.style.transform = `translateX(-${n * 100}%)`;
+    dots.forEach((d, i) => {
+      d.classList.toggle("bg-white", i === n);
+      d.classList.toggle("bg-white/30", i !== n);
+    });
+  }
+
+  dots.forEach((d, i) => d.addEventListener("click", () => go(i)));
+
+  let timer = setInterval(() => go((idx + 1) % dots.length), 4500);
+
+  // pause on hover
+  track.parentElement.addEventListener("mouseenter", () => clearInterval(timer));
+  track.parentElement.addEventListener("mouseleave", () => {
+    timer = setInterval(() => go((idx + 1) % dots.length), 4500);
+  });
+
+  go(0);
+</script>
+
+
+</body>
+</html>
